@@ -7,6 +7,7 @@
 
 #include <stdio.h>
 #include <math.h>
+#include <ctime>
 
 
 void tabliczka_mnozenia() {
@@ -123,7 +124,6 @@ void srednia_liczb_losowych() {
     scanf("%d", &maksymalna);
     printf("Podaj ile liczb ma zostac wylosowanych: ");
     scanf("%d", &ile_liczb);
-    srand(time_t(NULL));
     printf("Wylosowane liczby: \n");
     int losowa, ile_dodatnich = 0, ile_ujemnych = 0, suma_dodatnich = 0, suma_ujemnych = 0;
     for (int liczba = 1; liczba <= ile_liczb; liczba++) {
@@ -182,11 +182,7 @@ void rysowanie_szachownicy() {
 
 int main() {
     printf("Autor: Dominik Kaczmarek Pn/P 13:15\n\n\n");
-    // tabliczka_mnozenia();
-    // liczenie_cyfr();
-    // suma_szeregow_z_dokladnoscia();
-    // srednia_liczb_losowych();
-    // rysowanie_szachownicy();
+    srand(time(NULL));
     int wybranaOpcja;
     do {
         printf("\n\n\n=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=\n");
