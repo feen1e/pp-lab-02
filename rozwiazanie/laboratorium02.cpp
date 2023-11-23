@@ -10,6 +10,7 @@
 #include <ctime>
 
 
+
 void tabliczka_mnozenia() {
     int liczba_wierszy, liczba_kolumn, max_wierszy = 23, max_kolumn = 28;
     printf("Podaj liczbe wierszy tabliczki mnozenia: ");
